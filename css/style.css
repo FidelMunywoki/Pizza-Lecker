@@ -18,7 +18,7 @@ hr.line{
     justify-content: space-between;
 }
 
-.nav-style a {
+a {
     text-decoration: none;
     color: black;
 }
@@ -30,4 +30,23 @@ hr.line{
 
 #pizza-bg-img {
     background-image: url(../assets/pizza-bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.mt-9 {
+    margin-top: 10rem;
+}
+.order {
+    width: 30%;
+    border: 1px solid black;
+    margin-left: 40%;
+   
+}
+
+.about {
+    background-color: rgba(241, 130, 141,0.2);
 }

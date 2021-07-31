@@ -1,5 +1,5 @@
 .section-1 {
-    background-color: rgba(241, 130, 141,0.2);
+    background-color: rgba(241, 130, 141,0.9);
 
 }
 
@@ -34,6 +34,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
 }
 
@@ -49,4 +50,10 @@ a {
 
 .about {
     background-color: rgba(241, 130, 141,0.2);
+}
+
+
+
+.img-style {
+    height: 270px;
 }

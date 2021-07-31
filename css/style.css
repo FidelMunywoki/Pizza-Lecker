@@ -1,0 +1,59 @@
+.section-1 {
+    background-color: rgba(241, 130, 141,0.9);
+
+}
+
+.lecker-logo {
+    width: 15%;
+}
+
+hr.line{
+	border-top: 1px solid #8c8b8b;
+   
+}
+
+.nav-style ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-style a:hover{
+    color: rgba(241, 130, 141,1);
+    border: 1px solid rgba(210, 77, 87, 1);
+}
+
+#pizza-bg-img {
+    background-image: url(../assets/pizza-bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.mt-9 {
+    margin-top: 10rem;
+}
+.order {
+    width: 30%;
+    border: 1px solid black;
+    margin-left: 40%;
+   
+}
+
+.about {
+    background-color: rgba(241, 130, 141,0.2);
+}
+
+
+
+.img-style {
+    height: 270px;
+}

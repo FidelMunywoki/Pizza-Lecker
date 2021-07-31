@@ -163,7 +163,7 @@
                     <form>
                         <div class="mb-3">
                           <label for="flavor" class="form-label-lg fs-5">Select Your Best Flavor</label>
-                          <select class="form-select form-select-sm p-2 fs-6" aria-label=".form-select-sm example">
+                          <select class="form-select form-select-sm p-2 fs-6 pizzaName" aria-label=".form-select-sm example">
                             <option selected>select your best flavor here</option>
                             <option value="BBQ Chicken Pizza">BBQ Chicken Pizza</option>
                             <option value="Cheese Pizza">Cheese Pizza</option>
@@ -177,7 +177,7 @@
 
                        <div class="mb-3">
                           <label for="flavor" class="form-label fs-5">Select pizza size</label>
-                          <select class="form-select form-select-sm p-2 fs-6" aria-label=".form-select-sm example">
+                          <select class="form-select form-select-sm p-2 fs-6 pizzaSize" aria-label=".form-select-sm example">
                             <option selected>select your size</option>
                             <option value="small">Small -- sh. 750</option>
                             <option value="medium">Medium -- sh. 950</option>
@@ -187,7 +187,7 @@
 
                         <div class="mb-3">
                             <label for="flavor" class="form-label fs-5">Select your favorite crust</label>
-                            <select class="form-select form-select-sm p-2 fs-6" aria-label=".form-select-sm example">
+                            <select class="form-select form-select-sm p-2 fs-6 pizzaCrust" aria-label=".form-select-sm example">
                               <option selected>select your crust</option>
                               <option value="crispy">Crispy -- sh. 150</option>
                               <option value="gluten free">Gluten Free -- sh. 250</option>
@@ -196,44 +196,46 @@
                           </div>
 
                           <div class="row">
-                              <div class="col-md-6">
+                            <label for="toppings">Select Your Toppings at sh. 75 each</label><br>
+                              <div class="col-md-6 mt-3">
+                                
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="Pepperoni" id="pepperoni">
+                                    <input class="form-check-input" type="checkbox" value="Pepperoni" id="pepperoni" name="pizzaTopping">
                                     <label class="form-check-label" for="Pepperoni">
                                       Pepperoni
                                     </label>
                                   </div>
                                   <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="Mushrooms" id="mushrooms">
+                                    <input class="form-check-input" type="checkbox" value="Mushrooms" id="mushrooms" name="pizzaTopping">
                                     <label class="form-check-label" for="mushrooms">
                                       Mushrooms
                                     </label>
                                   </div>
                                   <div class="form-check">
-                                    <input type="checkbox" value="Onions"  class="form-check-input" id="onions">
+                                    <input type="checkbox" value="Onions"  class="form-check-input" id="onions" name="pizzaTopping">
                                     <label class="form-check-label" for="onions">Onions </label>
                                   </div>
                                   <div class="mb-3 form-check">
-                                    <input type="checkbox" value="Onions"  class="form-check-input" id="onions">
-                                    <label class="form-check-label" for="onions">Onions </label>
+                                    <input type="checkbox" value="Onions"  class="form-check-input" id="greenPepper" name="pizzaTopping">
+                                    <label class="form-check-label" for="onions">Green pepper </label>
                                   </div>
                               </div>
 
-                              <div class="col-md-6">
+                              <div class="col-md-6 mt-3">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="Sausage" id="sausage">
+                                    <input class="form-check-input" type="checkbox" value="Sausage" id="sausage" name="pizzaTopping">
                                     <label class="form-check-label" for="sausage">
                                       Sausage
                                     </label>
                                   </div>
                                   <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="Bacon" id="bacon">
+                                    <input class="form-check-input" type="checkbox" value="Bacon" id="bacon" name="pizzaTopping">
                                     <label class="form-check-label" for="bacon">
                                       Bacon
                                     </label>
                                   </div>
                                   <div class="mb-3 form-check">
-                                    <input type="checkbox"  value="Black olives" class="form-check-input" id="black-olives">
+                                    <input type="checkbox"  value="Black olives" class="form-check-input" id="black-olives" name="pizzaTopping">
                                     <label class="form-check-label" for="black olives">Black Olives</label>
                                   </div>
                               </div>
@@ -241,7 +243,7 @@
                           </div>
                            
                       
-                        <button type="submit" class="btn btn-warning">Add to Cart</button>
+                        <button type="submit" class="btn btn-warning addToCart">Add to Cart</button>
                       </form>
                 
                 </div>

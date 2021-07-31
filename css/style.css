@@ -1,5 +1,7 @@
 .section-1 {
-    background-color: rgba(241, 130, 141,0.9);
+    background-color: rgba(255,204,0);
+
+
 
 }
 
@@ -23,8 +25,12 @@ a {
     color: black;
 }
 
+a:hover {
+    color: red;
+}
+
 .nav-style a:hover{
-    color: rgba(241, 130, 141,1);
+    color: red;
     border: 1px solid rgba(210, 77, 87, 1);
 }
 
@@ -41,19 +47,36 @@ a {
 .mt-9 {
     margin-top: 10rem;
 }
-.order {
-    width: 30%;
-    border: 1px solid black;
-    margin-left: 40%;
-   
-}
+
 
 .about {
-    background-color: rgba(241, 130, 141,0.2);
+    background-color: rgba(255,204,0,0.2);
+    
 }
-
-
 
 .img-style {
     height: 270px;
+}
+
+.order-bg {
+    background-color: rgba(255,204,0,0.2);
+    width: 95%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-15 {width: 15%;}
+.w-20 {width: 20%;}
+
+.customer-choice {
+    display: none;
+}
+.home-delivery {
+    display: none;
+}
+
+.delivery-infor {
+    display: none;
 }

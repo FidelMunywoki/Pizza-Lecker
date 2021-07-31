@@ -25,13 +25,14 @@
                         <h1 class="p-3 fw-bold">PIZZA <span class="text-danger"> LECKER</span></h1>
                     </div>
                     <div class="col-md-4 text-center">
-                       <p class="fs-3 fw-bold pt-3">Customize Your Own Pizza </p>
+                        <a href="#order-now"><p class="fs-3 fw-bold pt-3">Customize Your Own Pizza </p></a>
+                       
                        <hr class="line">
                         
                     </div>
                     <div class="col-md-4 text-center nav-style fw-bold">
                         <ul class="pt-4 fs-5">
-                            <li><a href="#about">About</a></li>
+                            <li><a href="#about-click">About</a></li>
                             <li><a href="#varieties">Our Varieties</a></li>
                             <li><a href="#contacts">Contact US</a></li>
                         </ul>
@@ -65,7 +66,7 @@
     <section>
         <div class="container">
             <div class="row text-center mt-5" id="about">
-                <h1 class="fw-bold">About Us</h1>
+                <h1 class="fw-bold" id="about-click">About Us</h1>
                 <div class="col-md-6 text-start about">
                     <p class="p-5"> 
                         Pizza Lecker, Inc., branded as Lecker's, is a Kenyan multinational 
@@ -154,9 +155,183 @@
 
     <!-- Order Now -->
     <section>
-        <div class="container">
-            <div class="row">
+        <div class="container-fluid order-bg text-center mt-5">
+            <div class="row " id="order-now">
+                <h2 class="fw-bold mb-4">Customize Your Order Here</h2>
+                <h4 class="fw-bold">It is simple, Take what you feel will give you happiness and Freedom, We will deliver to you!!</h4>
+                <div class="col-md-6 text-start p-4 w-40">
+                    <form>
+                        <div class="mb-3">
+                          <label for="flavor" class="form-label-lg fs-5">Select Your Best Flavor</label>
+                          <select class="form-select form-select-sm p-2 fs-6" aria-label=".form-select-sm example">
+                            <option selected>select your best flavor here</option>
+                            <option value="BBQ Chicken Pizza">BBQ Chicken Pizza</option>
+                            <option value="Cheese Pizza">Cheese Pizza</option>
+                            <option value="Margherita Pizza">Margherita Pizza</option>
+                            <option value="Meat Pizza">Meat Pizza</option>
+                            <option value="Pepperoni Pizza">Pepperoni Pizza</option>
+                            <option value="Vegie Pizza">Vegie Pizza</option>
+                          </select>  
+                        </div>
+
+
+                       <div class="mb-3">
+                          <label for="flavor" class="form-label fs-5">Select pizza size</label>
+                          <select class="form-select form-select-sm p-2 fs-6" aria-label=".form-select-sm example">
+                            <option selected>select your size</option>
+                            <option value="small">Small -- sh. 750</option>
+                            <option value="medium">Medium -- sh. 950</option>
+                            <option value="large">Large -- sh. 1200</option>
+                          </select>          
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="flavor" class="form-label fs-5">Select your favorite crust</label>
+                            <select class="form-select form-select-sm p-2 fs-6" aria-label=".form-select-sm example">
+                              <option selected>select your crust</option>
+                              <option value="crispy">Crispy -- sh. 150</option>
+                              <option value="gluten free">Gluten Free -- sh. 250</option>
+                              <option value="stuffed">Stuffed -- sh. 200</option>
+                            </select>          
+                          </div>
+
+                          <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Pepperoni" id="pepperoni">
+                                    <label class="form-check-label" for="Pepperoni">
+                                      Pepperoni
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Mushrooms" id="mushrooms">
+                                    <label class="form-check-label" for="mushrooms">
+                                      Mushrooms
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input type="checkbox" value="Onions"  class="form-check-input" id="onions">
+                                    <label class="form-check-label" for="onions">Onions </label>
+                                  </div>
+                                  <div class="mb-3 form-check">
+                                    <input type="checkbox" value="Onions"  class="form-check-input" id="onions">
+                                    <label class="form-check-label" for="onions">Onions </label>
+                                  </div>
+                              </div>
+
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Sausage" id="sausage">
+                                    <label class="form-check-label" for="sausage">
+                                      Sausage
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Bacon" id="bacon">
+                                    <label class="form-check-label" for="bacon">
+                                      Bacon
+                                    </label>
+                                  </div>
+                                  <div class="mb-3 form-check">
+                                    <input type="checkbox"  value="Black olives" class="form-check-input" id="black-olives">
+                                    <label class="form-check-label" for="black olives">Black Olives</label>
+                                  </div>
+                              </div>
+
+                          </div>
+                           
+                      
+                        <button type="submit" class="btn btn-warning">Add to Cart</button>
+                      </form>
                 
+                </div>
+                <!-- Output section  -->
+
+                <div class="col-md-6 mt-5 text-start">
+                    <div id="general-infor" class="text-black fs-4">
+                        <p>
+                            Dear Customer, your order will be processed and deliverly will be done
+                            within the next one hour after placement. 
+                        </p>
+                        <p>
+                            Our policy is that you have to provide the full amount after deliverly to avoid 
+                            any inconvinience.
+                        </p>
+                        <p>
+                            In case of any complains and suggestions kindly reach out to our customer
+                            care department we are ready to help.
+                        </p>
+                         <p>Ragrds, <br>
+                            Management.
+                        </p>
+                    </div>
+
+                    <div class="customer-choice">
+                        <h2>Your Cart:</h2>
+                        <div id="customer-orders">
+                            <table class="table table-sm  pizzatable">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Size</th>
+                                    <th scope="col">Crust</th>
+                                    <th scope="col">Topping</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                                </thead>
+                                <tbody id="ordersmade">
+                                <tr>
+                                    <td id="pizza-name"></td>
+                                    <td id="pizza-size"></td>
+                                    <td id="pizza-crust"></td>
+                                    <td id="pizza-topping"></td>
+                                    <td id="AllTotal"></td>
+                                </tr>                  
+                                </tbody>
+                            </table>
+
+                            <p id="total-pizza"></p>
+                            <p id="total-bill"></p> 
+                            <p id="extra-price">Home delivery will cost sh. 200</p>
+                            <p id="ack-message"></p>
+                        </div>
+                        <button class="btn btn-warning extra-pizza w-15" id="extra-pizza">Add Pizza</button>
+                        <button class="btn btn-warning checkout w-15" id="checkout">Checkout</button>
+                        <button class="btn btn-warning checkout w-20 home-delivery" id="home-delivery">Home deliverly?</button>
+                    </div>
+                     <!-- Form to be filled after the customer chooses the home deliverly option -->
+
+                <div class="delivery-infor w-75 mt-4">
+
+                    <form>
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Your name</label>
+                          <input type="text" placeholder="Enter your name here" class="form-control" id="your-name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Email1" class="form-label">Email address</label>
+                            <input type="email" placeholder="Enter your email here" class="form-control" id="email">
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="phone number" class="form-label">Phone Number</label>
+                            <input type="number" placeholder="Enter your phone number here" class="form-control" id="phoneNumber" minlength="10">
+                          </div>
+                        
+                          <div class="mb-3">
+                            <label for="location" class="form-label">Location</label>
+                            <input type="text" placeholder="Enter your residence here" class="form-control" id="location">
+                          </div>
+                        
+
+                        <button type="submit" class="btn btn-warning">Place Order</button>
+                      </form>
+
+                </div>                  
+                </div>
+                <div>
+                </div>
             </div>
         </div>
     </section>

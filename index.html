@@ -160,7 +160,7 @@
                 <h2 class="fw-bold mb-4">Customize Your Order Here</h2>
                 <h4 class="fw-bold">It is simple, Take what you feel will give you happiness and Freedom, We will deliver to you!!</h4>
                 <div class="col-md-6 text-start p-4 w-40">
-                    <form>
+                    <form id="order-form">
                         <div class="mb-3">
                           <label for="flavor" class="form-label-lg fs-5">Select Your Best Flavor</label>
                           <select class="form-select form-select-sm p-2 fs-6 pizzaName" aria-label=".form-select-sm example">
@@ -216,7 +216,7 @@
                                     <label class="form-check-label" for="onions">Onions </label>
                                   </div>
                                   <div class="mb-3 form-check">
-                                    <input type="checkbox" value="Onions"  class="form-check-input" id="greenPepper" name="pizzaTopping">
+                                    <input type="checkbox" value="Green pepper"  class="form-check-input" id="greenPepper" name="pizzaTopping">
                                     <label class="form-check-label" for="onions">Green pepper </label>
                                   </div>
                               </div>
@@ -269,7 +269,7 @@
                     </div>
 
                     <div class="customer-choice">
-                        <h2>Your Cart:</h2>
+                        <h2 class="text-warning fw-bold">Your Cart:</h2>
                         <div id="customer-orders">
                             <table class="table table-sm  pizzatable">
                                 <thead>
@@ -287,7 +287,7 @@
                                     <td id="pizza-size"></td>
                                     <td id="pizza-crust"></td>
                                     <td id="pizza-topping"></td>
-                                    <td id="AllTotal"></td>
+                                    <td id="all-total"></td>
                                 </tr>                  
                                 </tbody>
                             </table>
@@ -297,9 +297,9 @@
                             <p id="extra-price">Home delivery will cost sh. 200</p>
                             <p id="ack-message"></p>
                         </div>
-                        <button class="btn btn-warning extra-pizza w-15" id="extra-pizza">Add Pizza</button>
-                        <button class="btn btn-warning checkout w-15" id="checkout">Checkout</button>
-                        <button class="btn btn-warning checkout w-20 home-delivery" id="home-delivery">Home deliverly?</button>
+                        <button class="btn btn-warning extra-pizza w-15 extra-pizza mt-4" id="extra-pizza">Add Pizza</button>
+                        <button class="btn btn-warning checkout w-15 mt-4 ms-5" id="checkout ">Checkout</button>
+                        <button class="btn btn-warning checkout w-20 home-delivery mt-4" id="home-delivery">Home deliverly?</button>
                     </div>
                      <!-- Form to be filled after the customer chooses the home deliverly option -->
 

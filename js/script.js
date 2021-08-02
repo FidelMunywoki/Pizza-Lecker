@@ -228,23 +228,16 @@ $(document).ready(function() {
 
             if (personName && phoneNumber && email && location != ""){
                 $("#total-bill").hide();
-                swal({
-                    title: "Sent!",
-                    text: personName+"Thank you for shopping with us. We have received your Order and it will be delivered in 1 hour",
-                    icon: "success",
-                    button: "OK!",
-                  });
-                  $("#ack-message").append("Hello "+personName+" You can still continue shopping with us for offers and give ways")
+                $(".delivery-infor").hide();
+                $("#normal-order").append("Your Total bill is: "+ checkoutTotalPrice+
+                "<p>Dear "+personName+ ",<p> Thank for shopping with us Kindly your order will be delivered to "+location+ " in the next 1 hour</p>"+
+                "<p>You can still make another order to stand a chance of winning a free PIZZA TREAT DAY!!</p>");
 
                   $("input#your-name").val("");
                   $("input#email").val("");
                   $("input#phoneNumber").val("");
                   $("input#location").val("");
-
-                  $("#delivery-infor").hide();
-                  
-                  $("#ack-message").slideDown(1000);
-
+                 
 
             }
             else {

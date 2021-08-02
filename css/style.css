@@ -84,3 +84,21 @@ a:hover {
 }
 
 .place-order{display: none;}
+
+.footer-img img {
+    width: 5%;
+
+
+}
+
+.footer-img ul, .contact-li ul {
+    list-style-type: none;
+    
+}
+
+.section-f {
+    background-color: rgba(255,204,0,0.5);
+
+
+
+}

@@ -13,6 +13,7 @@ This is a web application for Pizza Lecker which is a pizza selling venture, tha
 
 
 ## Live Page 
+https://fidelmunywoki.github.io/Pizza-Lecker/
 
 
 
